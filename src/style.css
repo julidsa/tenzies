@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0B2434;
+  padding: 20px;
+}
+
+main {
+  margin: auto;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dice-container {
+  grid-template-columns: repeat(5, 1fr);
+  display: grid;
+  align-self: center;
+  gap: 20px;
+  width: 380px;
+  height: 140px;
+  margin-top: 20px;
+}
+
+.die-face {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  font-family: 'Karla', sans-serif;
+  border-radius: 4px;
+  display: flex;
+  height: 58px;
+  width: 58px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 4px solid black;
+}
+
+.die-number {
+  font-size: 1.8rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0; 
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  margin: 5px 40px;
+  text-align: center;  
+}
+
+.button-roll {
+  font-family: 'Karla', sans-serif;    
+  width: 120px;
+  height: 35px;
+  margin: 25px 0px 10px 0;
+  background-color: #5035FF;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-size: 18px;
+}
+
+.number-roll {
+  font-family: 'Karla', sans-serif;    
+  width: 105px;
+  height: 30px;
+  padding-top: 8px;
+  background-color: #6653E7;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  margin: 0 7.5px;
+  justify-self: center;
+}
+
+.buttons {
+  max-width: fit-content;
+  align-self: center;
+  align-content: center;
+}
+
+hr {
+  border: 1px solid grey;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.result {
+  display: flex;
+  max-width: fit-content;
+  flex-direction: row;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.p-result {
+  font-size: 14px;
+}
+
+.record {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 495px) {
+  .dice-container {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 10px;
+    width: 200px;
+    height: 350px;
+    margin: 10px;
+  }
+
+  .die-face {
+    justify-self: center;
+  }
+
+  main {
+    height: 740px;
+    padding: 0;
+  }
+
+  .record {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+
+  hr {
+    background-color: #59E391;
+    width: 250px;
+  }
+  
+}
